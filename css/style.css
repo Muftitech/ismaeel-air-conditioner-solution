@@ -145,3 +145,59 @@ nav ul li{
 }
 
 }
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
+    url("../images/hero-banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-content{
+    max-width: 700px;
+}
+
+.hero h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    margin:10px;
+    background:#007BFF;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0056b3;
+}
+
+.call-btn{
+    background:#28a745;
+}
+
+.call-btn:hover{
+    background:#1f7d35;
+}
