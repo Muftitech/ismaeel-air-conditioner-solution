@@ -306,3 +306,20 @@ width:220px;
 .booking button:hover{
     background:#1ea952;
 }
+/* Fix Service & Why Choose Us text */
+
+.services .service-box,
+.why-us .service-box{
+    background:#ffffff;
+    color:#333;
+}
+
+.services .service-box h3,
+.why-us .service-box h3{
+    color:#003b8e;
+}
+
+.services .service-box p,
+.why-us .service-box p{
+    color:#555;
+}
