@@ -189,3 +189,14 @@ width:220px;
 }
 
 }
+.why-us{
+    padding:70px 20px;
+    background:#eef5ff;
+    text-align:center;
+}
+
+.why-us h2{
+    color:#003b8e;
+    margin-bottom:30px;
+    font-size:35px;
+}
