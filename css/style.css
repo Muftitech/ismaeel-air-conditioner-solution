@@ -215,3 +215,32 @@ width:220px;
     border-radius:12px;
     box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
+.gallery{
+    padding:70px 20px;
+    background:#f8f9fa;
+    text-align:center;
+}
+
+.gallery h2{
+    color:#003b8e;
+    margin-bottom:30px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
