@@ -1,17 +1,23 @@
-document.getElementById("bookingForm").addEventListener("submit", function(e){
+document.addEventListener("DOMContentLoaded", function () {
 
-e.preventDefault();
+    const form = document.getElementById("bookingForm");
 
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
-let location = document.getElementById("location").value;
-let vehicle = document.getElementById("vehicle").value;
-let date = document.getElementById("date").value;
-let time = document.getElementById("time").value;
-let problem = document.getElementById("problem").value;
+    if (!form) return;
 
-let message =
-`*NEW ON-SITE SERVICE BOOKING*
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const location = document.getElementById("location").value;
+        const vehicle = document.getElementById("vehicle").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const problem = document.getElementById("problem").value;
+
+        const message =
+`🚗 *NEW HOME / ON-SITE AC SERVICE BOOKING*
 
 👤 Name: ${name}
 
@@ -19,17 +25,21 @@ let message =
 
 📍 Location: ${location}
 
-🚗 Vehicle: ${vehicle}
+🚘 Vehicle: ${vehicle}
 
-📅 Date: ${date}
+📅 Preferred Date: ${date}
 
-🕒 Time: ${time}
+🕒 Preferred Time: ${time}
 
 ❄️ AC Problem:
 ${problem}`;
 
-let url = "https://wa.me/2348063302549?text=" + encodeURIComponent(message);
+        const whatsapp =
+"https://wa.me/2348063302549?text=" +
+encodeURIComponent(message);
 
-window.open(url, "_blank");
+        window.open(whatsapp, "_blank");
+
+    });
 
 });
