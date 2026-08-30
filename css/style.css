@@ -244,3 +244,40 @@ width:220px;
 .gallery-grid img:hover{
     transform:scale(1.05);
 }
+.booking{
+padding:70px 20px;
+background:#f4f8ff;
+text-align:center;
+}
+
+.booking h2{
+color:#003b8e;
+margin-bottom:20px;
+}
+
+.booking p{
+margin-bottom:30px;
+}
+
+.booking form{
+max-width:700px;
+margin:auto;
+}
+
+.booking input,
+.booking textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+.booking textarea{
+resize:vertical;
+}
+
+.booking button{
+width:100%;
+}
